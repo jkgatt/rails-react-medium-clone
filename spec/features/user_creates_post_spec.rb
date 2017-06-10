@@ -13,8 +13,6 @@ RSpec.describe "Creating post" do
 
 		click_on "Publish"
 
-		save_and_open_page
-
 		within(".posts") do
 			expect(page).to have_content "My first post"
 			expect(page).to have_content user.username
